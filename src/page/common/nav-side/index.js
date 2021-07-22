@@ -7,10 +7,10 @@ var navSide = {
     option : {
         name : '',
         navSideList : [
-            {name : 'user-center', description : '个人中心', href : './user-center.html'},
-            {name : 'order-list', description : '我的订单', href : './order-list.html'},
-            {name : 'password-modify', description : '修改密码', href : './password-modify.html'},
-            {name : 'about-csumall', description : '关于CSUMall', href : './about-csumall.html'}
+            {name : 'user-center', description : '个人中心', href : './view/user-center.html'},
+            {name : 'order-list', description : '我的订单', href : './view/order-list.html'},
+            {name : 'password-modify', description : '修改密码', href : './view/password-modify.html'},
+            {name : 'about-csumall', description : '关于CSUMall', href : './view/about-csumall.html'}
         ]
     },
     init : function(option){

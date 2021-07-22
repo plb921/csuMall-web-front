@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSUMall电商平台</title>
+    </head>
+    <%= require('html-loader!./common/common-head.html') %>
+<body>
+    <%= require('html-loader!./layout/nav.html') %>
+    <!-- <%= require('html-loader!./layout/header.html') %> -->
+
+    <div class="page-wrap w">
+        <%= require('html-loader!./layout/nav-side.html') %>
+
+        <!--右侧主内容-->
+        <div class="yui3-u-5-6 body">
+            <!-- <div class="order">
+                <div class="mt">
+                    <span class="fl"><strong>我的订单</strong></span>
+                </div>
+            </div> -->
+            <div class="order-detail" id="item">
+                <div class="tab-content">
+                    <div class="chosetype">
+                        <table class="sui-table table-bordered-simple">
+                            <thead>
+                            <tr>
+                                <th width="10%">商品</th>
+                                <th width="50%">订单详情</th>
+                                <th width="10%">收货人</th>
+                                <th width="10%">金额</th>
+                                <th width="10%">状态</th>
+                                <th width="10%">操作</th>
+                            </tr>
+                            </thead>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="all" class="tab-pane active">
+                        <div class="orders">
+
+
+                            <table class="sui-table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th colspan="5">
+                                        <span class="ordertitle">2021-05-24 11:59　订单编号：7867473872181848 <span class="pull-right delete"><img src="<%= require('../image/delete.png')%>"/></span></span>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td width="60%">
+                                        <div class="typographic"><img class="order-img" src="<%= require('../image/goods.png')%>" />
+                                            <a href="#" class="block-text">包邮 正品玛姬儿压缩面膜无纺布纸膜100粒 送泡瓶面膜刷喷瓶 新款</a><span>x1</span>
+                                            <ul class="unstyled list-inline">
+                                                <li>申请售后</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td rowspan="2" width="10%" class="center">小丽</td>
+                                    <td rowspan="2" width="10%" class="center">
+                                        <ul class="unstyled">
+                                            <li>总金额¥138.00</li>
+                                            <li>在线支付</li>
+
+                                        </ul>
+                                    </td>
+                                    <td rowspan="2" width="10%" class="center">已完成</td>
+                                    <td rowspan="2" width="10%" class="center">
+                                        <ul class="unstyled">
+                                            <li>
+                                                <a href="mycomment.html" target="_blank">评价|晒单</a>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="50%">
+                                        <div class="typographic"><img class="order-img" src="<%= require('../image/goods.png')%>" />
+                                            <a href="#" class="block-text">包邮 正品玛姬儿压缩面膜无纺布纸膜100粒 送泡瓶面膜刷喷瓶 新款</a><span>x1</span>
+                                            <ul class="unstyled">
+                                                <li>申请售后</li>
+
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="sui-table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th colspan="5">
+                                        <span class="ordertitle"><i id="order-time">2021-06-01 12:59</i>　订单编号：<i id="order-num">7867473872555</i> <span class="pull-right delete"><img src="<%= require('../image/delete.png')%>"/></span></span>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td width="60%">
+                                        <div class="typographic"><img class="order-img" src="<%= require('../image/goods.png')%>" />
+                                            <a href="#" class="block-text">包邮 正品玛姬儿压缩面膜无纺布纸膜100粒 送泡瓶面膜刷喷瓶 新款</a><span>x1</span>
+                                            <ul class="unstyled list-inline">
+                                                <li>申请售后</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td rowspan="2" width="10%" class="center">小丽</td>
+                                    <td rowspan="2" width="10%" class="center">
+                                        <ul class="unstyled">
+                                            <li>总金额¥138.00</li>
+                                            <li>在线支付</li>
+
+                                        </ul>
+                                    </td>
+                                    <td rowspan="2" width="10%" class="center">已完成</td>
+                                    <td rowspan="2" width="10%" class="center">
+                                        <ul class="unstyled">
+                                            <li>
+                                                <a href="mycomment.html" target="_blank">评价|晒单</a>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="50%">
+                                        <div class="typographic"><img class="order-img" src="<%= require('../image/goods.png')%>" />
+                                            <a href="#" class="block-text">包邮 正品玛姬儿压缩面膜无纺布纸膜100粒 送泡瓶面膜刷喷瓶 新款</a><span>x1</span>
+                                            <ul class="unstyled">
+                                                <li>申请售后</li>
+
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="choose-order">
+                            <div class="sui-pagination pagination-large top-pages">
+                                <ul>
+                                    <li class="link-item prev disabled">
+                                        <a href="javascript:">«上一页</a>
+                                    </li>
+                                    <li class="link-item active disabled">
+                                        <a href="javascript:">1</a>
+                                    </li>
+                                    <li class="link-item active">
+                                        <a href="javascript:">1</a>
+                                    </li>
+
+                                    <li class="link-item prev disabled">
+                                        <a href="javascript:">下一页»</a>
+                                    </li>
+                                </ul>
+                                <!-- <div>
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;共2页&nbsp;</span>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- <div class="clearfix"></div> -->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    <%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

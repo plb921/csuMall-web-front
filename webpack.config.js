@@ -8,7 +8,7 @@ var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
 
 var getHtmlPluginConfig = function(name){
     return {
-            template : './src/view/'+ name +'.html',
+            template : './src/view/' + name +'.html',
             filename : 'view/'+ name +'.html',
             inject : true,
             hash : true,
@@ -20,7 +20,8 @@ var config = {
     entry:{
         'common' : ['./src/page/common/index.js'],
         'index' : ['./src/page/index/index.js'],
-        'login' : ['./src/page/login/index.js']
+        'login' : ['./src/page/login/index.js'],
+        'order-list' : ['./src/page/order-list/index.js']
     },
     output: {
         path: './dist',
@@ -51,7 +52,10 @@ var config = {
         }),
         new ExtractTextWebpackPlugin("css/[name].css"),
         new HtmlWebpackPlugin(getHtmlPluginConfig('index')),
-        new HtmlWebpackPlugin(getHtmlPluginConfig('list'))
+        new HtmlWebpackPlugin(getHtmlPluginConfig('list')),
+        new HtmlWebpackPlugin(getHtmlPluginConfig('login')),
+        new HtmlWebpackPlugin(getHtmlPluginConfig('content')),
+        new HtmlWebpackPlugin(getHtmlPluginConfig('order-list'))
     ],
     externals:{
         'jquery' : 'window.jQuery'

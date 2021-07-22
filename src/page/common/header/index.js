@@ -29,7 +29,7 @@ var header = {
     searchSubmit : function(){
         var keyword = $.trim($('#search-input').val());
         if(keyword){
-            window.location.href = './list.html?keyword=' + keyword ;
+            window.location.href = './view/list.html?keyword=' + keyword ;
         }else{
             alert("商品名不能为空！");
         }

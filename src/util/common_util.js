@@ -29,7 +29,7 @@ var _common_util = {
         });        
     },
     doLogin : function(){
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+        window.location.href = './view/login.html?redirect=' + encodeURIComponent(window.location.href);
     },
     getServerURL : function(path){
         return config.serverHost + path;

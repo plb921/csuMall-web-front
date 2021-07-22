@@ -1,1 +1,2 @@
-console.log('this is login/index.js');
+require('./index.css');
+require('page/common/nav-simple/index.js');
